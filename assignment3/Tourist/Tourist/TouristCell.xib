@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="touristcell" rowHeight="718" id="KGk-i7-Jjw" customClass="TouristCell" customModule="Tourist">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="375"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="389" height="375"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paris" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2J-Mc-QsF">
+                        <rect key="frame" x="5" y="349.66666666666669" width="379" height="20.333333333333314"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Paris" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rfu-fg-Ric">
+                        <rect key="frame" x="5" y="5" width="379" height="339.66666666666669"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="M2J-Mc-QsF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="3Pq-HI-xwQ"/>
+                    <constraint firstItem="Rfu-fg-Ric" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="9N7-hc-Y4b"/>
+                    <constraint firstItem="M2J-Mc-QsF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Cnr-b1-BCu"/>
+                    <constraint firstItem="M2J-Mc-QsF" firstAttribute="top" secondItem="Rfu-fg-Ric" secondAttribute="bottom" constant="5" id="JfA-XZ-W1p"/>
+                    <constraint firstAttribute="trailing" secondItem="Rfu-fg-Ric" secondAttribute="trailing" constant="5" id="LT9-Uq-8oF"/>
+                    <constraint firstItem="M2J-Mc-QsF" firstAttribute="top" secondItem="Rfu-fg-Ric" secondAttribute="bottom" constant="5" id="LzC-Z7-Qzh"/>
+                    <constraint firstAttribute="trailing" secondItem="M2J-Mc-QsF" secondAttribute="trailing" constant="5" id="RMX-jp-65o"/>
+                    <constraint firstAttribute="trailing" secondItem="M2J-Mc-QsF" secondAttribute="trailing" constant="5" id="T2g-2t-j95"/>
+                    <constraint firstAttribute="trailing" secondItem="Rfu-fg-Ric" secondAttribute="trailing" constant="5" id="TLA-NW-Cxr"/>
+                    <constraint firstAttribute="bottom" secondItem="M2J-Mc-QsF" secondAttribute="bottom" constant="5" id="VIa-i4-d5f"/>
+                    <constraint firstItem="Rfu-fg-Ric" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="cnv-XA-m9c"/>
+                    <constraint firstAttribute="trailing" secondItem="M2J-Mc-QsF" secondAttribute="trailing" constant="5" id="ddC-Cx-DNT"/>
+                    <constraint firstAttribute="bottom" secondItem="M2J-Mc-QsF" secondAttribute="bottom" constant="5" id="gID-AC-oLv"/>
+                    <constraint firstItem="M2J-Mc-QsF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="jbe-sS-hbh"/>
+                    <constraint firstItem="Rfu-fg-Ric" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="vDl-RB-qVG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgTourist" destination="Rfu-fg-Ric" id="36X-l8-1tm"/>
+                <outlet property="lblTourist" destination="M2J-Mc-QsF" id="QIs-3F-tii"/>
+            </connections>
+            <point key="canvasLocation" x="183.84615384615384" y="50.11848341232227"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Paris" width="1109" height="1664"/>
+    </resources>
+</document>
